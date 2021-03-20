@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2021_03_20_122520) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -169,6 +169,18 @@ ActiveRecord::Schema.define(version: 0) do
     t.datetime "created_at", default: -> { "CURRENT_TIMESTAMP" }, null: false
     t.index ["auth_account_id", "day_long_name"], name: "uc_days_auth_account_id_day_long_name", unique: true
     t.index ["auth_account_id", "day_number"], name: "uc_days_auth_account_id_day_number", unique: true
+  end
+
+  create_table "devise_users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["email"], name: "index_devise_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_devise_users_on_reset_password_token", unique: true
   end
 
   create_table "grade_types", force: :cascade do |t|

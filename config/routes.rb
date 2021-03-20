@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  devise_for :devise_users
+  #get 'home/index'
+  root 'home#index'
   resources :years
   resources :year_weeks
   resources :tasks
