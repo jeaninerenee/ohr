@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Auth Organizations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Organization name</th>
+      <th>Auth account</th>
+      <th>Role</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @auth_organizations.each do |auth_organization| %>
+      <tr>
+        <td><%= auth_organization.organization_name %></td>
+        <td><%= auth_organization.auth_account_id %></td>
+        <td><%= auth_organization.role_id %></td>
+        <td><%= auth_organization.status_id %></td>
+        <td><%= auth_organization.updated_by %></td>
+        <td><%= auth_organization.created_by %></td>
+        <td><%= link_to 'Show', auth_organization %></td>
+        <td><%= link_to 'Edit', edit_auth_organization_path(auth_organization) %></td>
+        <td><%= link_to 'Destroy', auth_organization, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Auth Organization', new_auth_organization_path %>

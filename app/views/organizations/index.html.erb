@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Organizations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Auth account</th>
+      <th>Organization name</th>
+      <th>Organization order</th>
+      <th>Organization note</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @organizations.each do |organization| %>
+      <tr>
+        <td><%= organization.auth_account_id %></td>
+        <td><%= organization.organization_name %></td>
+        <td><%= organization.organization_order %></td>
+        <td><%= organization.organization_note %></td>
+        <td><%= organization.status_id %></td>
+        <td><%= organization.updated_by %></td>
+        <td><%= organization.created_by %></td>
+        <td><%= link_to 'Show', organization %></td>
+        <td><%= link_to 'Edit', edit_organization_path(organization) %></td>
+        <td><%= link_to 'Destroy', organization, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Organization', new_organization_path %>

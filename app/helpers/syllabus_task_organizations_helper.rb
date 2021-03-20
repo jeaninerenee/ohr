@@ -1,0 +1,2 @@
+module SyllabusTaskOrganizationsHelper
+end

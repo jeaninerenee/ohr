@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Contributor Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Auth account</th>
+      <th>Contributor type</th>
+      <th>Contributor type order</th>
+      <th>Default ind</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contributor_types.each do |contributor_type| %>
+      <tr>
+        <td><%= contributor_type.auth_account_id %></td>
+        <td><%= contributor_type.contributor_type %></td>
+        <td><%= contributor_type.contributor_type_order %></td>
+        <td><%= contributor_type.default_ind %></td>
+        <td><%= contributor_type.status_id %></td>
+        <td><%= contributor_type.updated_by %></td>
+        <td><%= contributor_type.created_by %></td>
+        <td><%= link_to 'Show', contributor_type %></td>
+        <td><%= link_to 'Edit', edit_contributor_type_path(contributor_type) %></td>
+        <td><%= link_to 'Destroy', contributor_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Contributor Type', new_contributor_type_path %>

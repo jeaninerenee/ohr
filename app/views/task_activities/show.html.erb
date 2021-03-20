@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @task_activity.task_id %>
+</p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @task_activity.activity_id %>
+</p>
+
+<p>
+  <strong>Activity note:</strong>
+  <%= @task_activity.activity_note %>
+</p>
+
+<p>
+  <strong>Activity order:</strong>
+  <%= @task_activity.activity_order %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @task_activity.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @task_activity.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @task_activity.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_task_activity_path(@task_activity) %> |
+<%= link_to 'Back', task_activities_path %>

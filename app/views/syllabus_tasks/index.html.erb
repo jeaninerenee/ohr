@@ -1,0 +1,67 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Syllabus Tasks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Syllabus</th>
+      <th>Week number</th>
+      <th>Day</th>
+      <th>Session number</th>
+      <th>Syllabus task</th>
+      <th>Pretest ind</th>
+      <th>Test ind</th>
+      <th>Quiz ind</th>
+      <th>Exam ind</th>
+      <th>Lab ind</th>
+      <th>In person ind</th>
+      <th>Online ind</th>
+      <th>Excursion ind</th>
+      <th>Task priority</th>
+      <th>Task time in hours</th>
+      <th>Task time in minutes</th>
+      <th>Task note</th>
+      <th>Teacher note</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @syllabus_tasks.each do |syllabus_task| %>
+      <tr>
+        <td><%= syllabus_task.syllabus_id %></td>
+        <td><%= syllabus_task.week_number %></td>
+        <td><%= syllabus_task.day_id %></td>
+        <td><%= syllabus_task.session_number %></td>
+        <td><%= syllabus_task.syllabus_task %></td>
+        <td><%= syllabus_task.pretest_ind %></td>
+        <td><%= syllabus_task.test_ind %></td>
+        <td><%= syllabus_task.quiz_ind %></td>
+        <td><%= syllabus_task.exam_ind %></td>
+        <td><%= syllabus_task.lab_ind %></td>
+        <td><%= syllabus_task.in_person_ind %></td>
+        <td><%= syllabus_task.online_ind %></td>
+        <td><%= syllabus_task.excursion_ind %></td>
+        <td><%= syllabus_task.task_priority %></td>
+        <td><%= syllabus_task.task_time_in_hours %></td>
+        <td><%= syllabus_task.task_time_in_minutes %></td>
+        <td><%= syllabus_task.task_note %></td>
+        <td><%= syllabus_task.teacher_note %></td>
+        <td><%= syllabus_task.status_id %></td>
+        <td><%= syllabus_task.updated_by %></td>
+        <td><%= syllabus_task.created_by %></td>
+        <td><%= link_to 'Show', syllabus_task %></td>
+        <td><%= link_to 'Edit', edit_syllabus_task_path(syllabus_task) %></td>
+        <td><%= link_to 'Destroy', syllabus_task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Syllabus Task', new_syllabus_task_path %>

@@ -1,0 +1,109 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Syllabus:</strong>
+  <%= @syllabus_task.syllabus_id %>
+</p>
+
+<p>
+  <strong>Week number:</strong>
+  <%= @syllabus_task.week_number %>
+</p>
+
+<p>
+  <strong>Day:</strong>
+  <%= @syllabus_task.day_id %>
+</p>
+
+<p>
+  <strong>Session number:</strong>
+  <%= @syllabus_task.session_number %>
+</p>
+
+<p>
+  <strong>Syllabus task:</strong>
+  <%= @syllabus_task.syllabus_task %>
+</p>
+
+<p>
+  <strong>Pretest ind:</strong>
+  <%= @syllabus_task.pretest_ind %>
+</p>
+
+<p>
+  <strong>Test ind:</strong>
+  <%= @syllabus_task.test_ind %>
+</p>
+
+<p>
+  <strong>Quiz ind:</strong>
+  <%= @syllabus_task.quiz_ind %>
+</p>
+
+<p>
+  <strong>Exam ind:</strong>
+  <%= @syllabus_task.exam_ind %>
+</p>
+
+<p>
+  <strong>Lab ind:</strong>
+  <%= @syllabus_task.lab_ind %>
+</p>
+
+<p>
+  <strong>In person ind:</strong>
+  <%= @syllabus_task.in_person_ind %>
+</p>
+
+<p>
+  <strong>Online ind:</strong>
+  <%= @syllabus_task.online_ind %>
+</p>
+
+<p>
+  <strong>Excursion ind:</strong>
+  <%= @syllabus_task.excursion_ind %>
+</p>
+
+<p>
+  <strong>Task priority:</strong>
+  <%= @syllabus_task.task_priority %>
+</p>
+
+<p>
+  <strong>Task time in hours:</strong>
+  <%= @syllabus_task.task_time_in_hours %>
+</p>
+
+<p>
+  <strong>Task time in minutes:</strong>
+  <%= @syllabus_task.task_time_in_minutes %>
+</p>
+
+<p>
+  <strong>Task note:</strong>
+  <%= @syllabus_task.task_note %>
+</p>
+
+<p>
+  <strong>Teacher note:</strong>
+  <%= @syllabus_task.teacher_note %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @syllabus_task.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @syllabus_task.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @syllabus_task.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_syllabus_task_path(@syllabus_task) %> |
+<%= link_to 'Back', syllabus_tasks_path %>

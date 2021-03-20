@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  auth_account: one
+  prefix_name: MyString
+  first_name: MyString
+  middle_name: MyString
+  last_name: MyString
+  suffix_name: MyString
+  goes_by_name: MyString
+  student_ind: false
+  auth_user: one
+  person_order: 1
+  person_note: MyText
+  status: one
+  updated_by: MyString
+  created_by: MyString
+
+two:
+  auth_account: two
+  prefix_name: MyString
+  first_name: MyString
+  middle_name: MyString
+  last_name: MyString
+  suffix_name: MyString
+  goes_by_name: MyString
+  student_ind: false
+  auth_user: two
+  person_order: 1
+  person_note: MyText
+  status: two
+  updated_by: MyString
+  created_by: MyString

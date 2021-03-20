@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  auth_account: one
+  day_number: 1
+  day_short_name: MyString
+  day_long_name: MyString
+  status: one
+  updated_by: MyString
+  created_by: MyString
+
+two:
+  auth_account: two
+  day_number: 1
+  day_short_name: MyString
+  day_long_name: MyString
+  status: two
+  updated_by: MyString
+  created_by: MyString

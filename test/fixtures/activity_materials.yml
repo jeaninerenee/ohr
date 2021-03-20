@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  activity: one
+  material: one
+  activity_material_order: 1
+  status: one
+  updated_by: MyString
+  created_by: MyString
+
+two:
+  activity: two
+  material: two
+  activity_material_order: 1
+  status: two
+  updated_by: MyString
+  created_by: MyString

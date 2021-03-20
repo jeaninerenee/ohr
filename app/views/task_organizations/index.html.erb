@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Task Organizations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Task</th>
+      <th>Organization</th>
+      <th>Primary ind</th>
+      <th>Organization note</th>
+      <th>Organization order</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @task_organizations.each do |task_organization| %>
+      <tr>
+        <td><%= task_organization.task_id %></td>
+        <td><%= task_organization.organization_id %></td>
+        <td><%= task_organization.primary_ind %></td>
+        <td><%= task_organization.organization_note %></td>
+        <td><%= task_organization.organization_order %></td>
+        <td><%= task_organization.status_id %></td>
+        <td><%= task_organization.updated_by %></td>
+        <td><%= task_organization.created_by %></td>
+        <td><%= link_to 'Show', task_organization %></td>
+        <td><%= link_to 'Edit', edit_task_organization_path(task_organization) %></td>
+        <td><%= link_to 'Destroy', task_organization, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Task Organization', new_task_organization_path %>

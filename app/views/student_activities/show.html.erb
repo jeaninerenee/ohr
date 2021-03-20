@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Auth account:</strong>
+  <%= @student_activity.auth_account_id %>
+</p>
+
+<p>
+  <strong>Student year:</strong>
+  <%= @student_activity.student_year_id %>
+</p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @student_activity.activity_id %>
+</p>
+
+<p>
+  <strong>Student activity priority:</strong>
+  <%= @student_activity.student_activity_priority %>
+</p>
+
+<p>
+  <strong>Done ind:</strong>
+  <%= @student_activity.done_ind %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @student_activity.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @student_activity.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @student_activity.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_student_activity_path(@student_activity) %> |
+<%= link_to 'Back', student_activities_path %>

@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Syllabus Task People</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Syllabus task</th>
+      <th>Person</th>
+      <th>Teacher ind</th>
+      <th>Primary ind</th>
+      <th>Person note</th>
+      <th>Person order</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @syllabus_task_people.each do |syllabus_task_person| %>
+      <tr>
+        <td><%= syllabus_task_person.syllabus_task_id %></td>
+        <td><%= syllabus_task_person.person_id %></td>
+        <td><%= syllabus_task_person.teacher_ind %></td>
+        <td><%= syllabus_task_person.primary_ind %></td>
+        <td><%= syllabus_task_person.person_note %></td>
+        <td><%= syllabus_task_person.person_order %></td>
+        <td><%= syllabus_task_person.status_id %></td>
+        <td><%= syllabus_task_person.updated_by %></td>
+        <td><%= syllabus_task_person.created_by %></td>
+        <td><%= link_to 'Show', syllabus_task_person %></td>
+        <td><%= link_to 'Edit', edit_syllabus_task_person_path(syllabus_task_person) %></td>
+        <td><%= link_to 'Destroy', syllabus_task_person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Syllabus Task Person', new_syllabus_task_person_path %>

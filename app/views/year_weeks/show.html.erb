@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Auth account:</strong>
+  <%= @year_week.auth_account_id %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @year_week.year_id %>
+</p>
+
+<p>
+  <strong>Week number:</strong>
+  <%= @year_week.week_number %>
+</p>
+
+<p>
+  <strong>Week start date:</strong>
+  <%= @year_week.week_start_date %>
+</p>
+
+<p>
+  <strong>Week end date:</strong>
+  <%= @year_week.week_end_date %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @year_week.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @year_week.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @year_week.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_year_week_path(@year_week) %> |
+<%= link_to 'Back', year_weeks_path %>

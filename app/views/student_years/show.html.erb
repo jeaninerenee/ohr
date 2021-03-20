@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Auth account:</strong>
+  <%= @student_year.auth_account_id %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @student_year.person_id %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @student_year.grade_id %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @student_year.year_id %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @student_year.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @student_year.end_date %>
+</p>
+
+<p>
+  <strong>Done ind:</strong>
+  <%= @student_year.done_ind %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @student_year.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @student_year.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @student_year.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_student_year_path(@student_year) %> |
+<%= link_to 'Back', student_years_path %>

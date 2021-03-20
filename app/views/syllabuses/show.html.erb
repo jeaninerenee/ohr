@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Auth account:</strong>
+  <%= @syllabus.auth_account_id %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @syllabus.grade_id %>
+</p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @syllabus.activity_id %>
+</p>
+
+<p>
+  <strong>Syllabus name:</strong>
+  <%= @syllabus.syllabus_name %>
+</p>
+
+<p>
+  <strong>Version number:</strong>
+  <%= @syllabus.version_number %>
+</p>
+
+<p>
+  <strong>Syllabus note:</strong>
+  <%= @syllabus.syllabus_note %>
+</p>
+
+<p>
+  <strong>Teacher note:</strong>
+  <%= @syllabus.teacher_note %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @syllabus.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @syllabus.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @syllabus.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_syllabus_path(@syllabus) %> |
+<%= link_to 'Back', syllabuses_path %>

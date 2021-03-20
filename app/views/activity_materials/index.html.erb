@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Activity Materials</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Activity</th>
+      <th>Material</th>
+      <th>Activity material order</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @activity_materials.each do |activity_material| %>
+      <tr>
+        <td><%= activity_material.activity_id %></td>
+        <td><%= activity_material.material_id %></td>
+        <td><%= activity_material.activity_material_order %></td>
+        <td><%= activity_material.status_id %></td>
+        <td><%= activity_material.updated_by %></td>
+        <td><%= activity_material.created_by %></td>
+        <td><%= link_to 'Show', activity_material %></td>
+        <td><%= link_to 'Edit', edit_activity_material_path(activity_material) %></td>
+        <td><%= link_to 'Destroy', activity_material, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Activity Material', new_activity_material_path %>

@@ -1,0 +1,5 @@
+class TaskPerson < ApplicationRecord
+  belongs_to :task
+  belongs_to :person
+  belongs_to :status
+end

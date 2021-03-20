@@ -1,0 +1,72 @@
+<%= form_with(model: material_contributor) do |form| %>
+  <% if material_contributor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(material_contributor.errors.count, "error") %> prohibited this material_contributor from being saved:</h2>
+
+      <ul>
+        <% material_contributor.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :material_id %>
+    <%= form.text_field :material_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contributor_type_id %>
+    <%= form.text_field :contributor_type_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contributor_order %>
+    <%= form.number_field :contributor_order %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prefix_name %>
+    <%= form.text_field :prefix_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :middle_name %>
+    <%= form.text_field :middle_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :suffix_name %>
+    <%= form.text_field :suffix_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status_id %>
+    <%= form.text_field :status_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :updated_by %>
+    <%= form.text_field :updated_by %>
+  </div>
+
+  <div class="field">
+    <%= form.label :created_by %>
+    <%= form.text_field :created_by %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

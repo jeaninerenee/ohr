@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Plan name:</strong>
+  <%= @plan.plan_name %>
+</p>
+
+<p>
+  <strong>Plan order:</strong>
+  <%= @plan.plan_order %>
+</p>
+
+<p>
+  <strong>Plan description:</strong>
+  <%= @plan.plan_description %>
+</p>
+
+<p>
+  <strong>Default ind:</strong>
+  <%= @plan.default_ind %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @plan.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @plan.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @plan.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_plan_path(@plan) %> |
+<%= link_to 'Back', plans_path %>

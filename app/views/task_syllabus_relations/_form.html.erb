@@ -1,0 +1,52 @@
+<%= form_with(model: task_syllabus_relation) do |form| %>
+  <% if task_syllabus_relation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(task_syllabus_relation.errors.count, "error") %> prohibited this task_syllabus_relation from being saved:</h2>
+
+      <ul>
+        <% task_syllabus_relation.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :task_id %>
+    <%= form.text_field :task_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :syllabus_task_id %>
+    <%= form.text_field :syllabus_task_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :syllabus_start_date %>
+    <%= form.date_select :syllabus_start_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :syllabus_end_date %>
+    <%= form.date_select :syllabus_end_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status_id %>
+    <%= form.text_field :status_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :updated_by %>
+    <%= form.text_field :updated_by %>
+  </div>
+
+  <div class="field">
+    <%= form.label :created_by %>
+    <%= form.text_field :created_by %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Task Grades</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Task</th>
+      <th>Grade type</th>
+      <th>Task grade</th>
+      <th>Task total correct</th>
+      <th>Task total possible</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @task_grades.each do |task_grade| %>
+      <tr>
+        <td><%= task_grade.task_id %></td>
+        <td><%= task_grade.grade_type_id %></td>
+        <td><%= task_grade.task_grade %></td>
+        <td><%= task_grade.task_total_correct %></td>
+        <td><%= task_grade.task_total_possible %></td>
+        <td><%= task_grade.status_id %></td>
+        <td><%= task_grade.updated_by %></td>
+        <td><%= task_grade.created_by %></td>
+        <td><%= link_to 'Show', task_grade %></td>
+        <td><%= link_to 'Edit', edit_task_grade_path(task_grade) %></td>
+        <td><%= link_to 'Destroy', task_grade, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Task Grade', new_task_grade_path %>

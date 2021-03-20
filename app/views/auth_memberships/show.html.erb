@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Auth user:</strong>
+  <%= @auth_membership.auth_user_id %>
+</p>
+
+<p>
+  <strong>Auth organization:</strong>
+  <%= @auth_membership.auth_organization_id %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @auth_membership.role_id %>
+</p>
+
+<p>
+  <strong>Account email:</strong>
+  <%= @auth_membership.account_email %>
+</p>
+
+<p>
+  <strong>Account phone:</strong>
+  <%= @auth_membership.account_phone %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @auth_membership.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @auth_membership.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @auth_membership.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_auth_membership_path(@auth_membership) %> |
+<%= link_to 'Back', auth_memberships_path %>

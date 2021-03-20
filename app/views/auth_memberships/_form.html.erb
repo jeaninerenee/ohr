@@ -1,0 +1,57 @@
+<%= form_with(model: auth_membership) do |form| %>
+  <% if auth_membership.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(auth_membership.errors.count, "error") %> prohibited this auth_membership from being saved:</h2>
+
+      <ul>
+        <% auth_membership.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :auth_user_id %>
+    <%= form.text_field :auth_user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :auth_organization_id %>
+    <%= form.text_field :auth_organization_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :role_id %>
+    <%= form.text_field :role_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :account_email %>
+    <%= form.text_field :account_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :account_phone %>
+    <%= form.text_field :account_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status_id %>
+    <%= form.text_field :status_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :updated_by %>
+    <%= form.text_field :updated_by %>
+  </div>
+
+  <div class="field">
+    <%= form.label :created_by %>
+    <%= form.text_field :created_by %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Student Activities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Auth account</th>
+      <th>Student year</th>
+      <th>Activity</th>
+      <th>Student activity priority</th>
+      <th>Done ind</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @student_activities.each do |student_activity| %>
+      <tr>
+        <td><%= student_activity.auth_account_id %></td>
+        <td><%= student_activity.student_year_id %></td>
+        <td><%= student_activity.activity_id %></td>
+        <td><%= student_activity.student_activity_priority %></td>
+        <td><%= student_activity.done_ind %></td>
+        <td><%= student_activity.status_id %></td>
+        <td><%= student_activity.updated_by %></td>
+        <td><%= student_activity.created_by %></td>
+        <td><%= link_to 'Show', student_activity %></td>
+        <td><%= link_to 'Edit', edit_student_activity_path(student_activity) %></td>
+        <td><%= link_to 'Destroy', student_activity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Student Activity', new_student_activity_path %>

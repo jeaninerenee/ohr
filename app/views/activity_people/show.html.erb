@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @activity_person.activity_id %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @activity_person.person_id %>
+</p>
+
+<p>
+  <strong>Teacher ind:</strong>
+  <%= @activity_person.teacher_ind %>
+</p>
+
+<p>
+  <strong>Person note:</strong>
+  <%= @activity_person.person_note %>
+</p>
+
+<p>
+  <strong>Person order:</strong>
+  <%= @activity_person.person_order %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @activity_person.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @activity_person.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @activity_person.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_activity_person_path(@activity_person) %> |
+<%= link_to 'Back', activity_people_path %>

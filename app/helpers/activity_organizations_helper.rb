@@ -1,0 +1,2 @@
+module ActivityOrganizationsHelper
+end

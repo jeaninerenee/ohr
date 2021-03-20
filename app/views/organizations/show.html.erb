@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Auth account:</strong>
+  <%= @organization.auth_account_id %>
+</p>
+
+<p>
+  <strong>Organization name:</strong>
+  <%= @organization.organization_name %>
+</p>
+
+<p>
+  <strong>Organization order:</strong>
+  <%= @organization.organization_order %>
+</p>
+
+<p>
+  <strong>Organization note:</strong>
+  <%= @organization.organization_note %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @organization.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @organization.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @organization.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_organization_path(@organization) %> |
+<%= link_to 'Back', organizations_path %>

@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  task: one
+  grade_type: one
+  task_grade: MyString
+  task_total_correct: 9.99
+  task_total_possible: 9.99
+  status: one
+  updated_by: MyString
+  created_by: MyString
+
+two:
+  task: two
+  grade_type: two
+  task_grade: MyString
+  task_total_correct: 9.99
+  task_total_possible: 9.99
+  status: two
+  updated_by: MyString
+  created_by: MyString

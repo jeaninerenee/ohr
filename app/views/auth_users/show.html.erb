@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @auth_user.username %>
+</p>
+
+<p>
+  <strong>Prefix name:</strong>
+  <%= @auth_user.prefix_name %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @auth_user.first_name %>
+</p>
+
+<p>
+  <strong>Middle name:</strong>
+  <%= @auth_user.middle_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @auth_user.last_name %>
+</p>
+
+<p>
+  <strong>Suffix name:</strong>
+  <%= @auth_user.suffix_name %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @auth_user.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @auth_user.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @auth_user.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_auth_user_path(@auth_user) %> |
+<%= link_to 'Back', auth_users_path %>

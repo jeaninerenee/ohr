@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Material Contributors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Material</th>
+      <th>Contributor type</th>
+      <th>Contributor order</th>
+      <th>Prefix name</th>
+      <th>First name</th>
+      <th>Middle name</th>
+      <th>Last name</th>
+      <th>Suffix name</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @material_contributors.each do |material_contributor| %>
+      <tr>
+        <td><%= material_contributor.material_id %></td>
+        <td><%= material_contributor.contributor_type_id %></td>
+        <td><%= material_contributor.contributor_order %></td>
+        <td><%= material_contributor.prefix_name %></td>
+        <td><%= material_contributor.first_name %></td>
+        <td><%= material_contributor.middle_name %></td>
+        <td><%= material_contributor.last_name %></td>
+        <td><%= material_contributor.suffix_name %></td>
+        <td><%= material_contributor.status_id %></td>
+        <td><%= material_contributor.updated_by %></td>
+        <td><%= material_contributor.created_by %></td>
+        <td><%= link_to 'Show', material_contributor %></td>
+        <td><%= link_to 'Edit', edit_material_contributor_path(material_contributor) %></td>
+        <td><%= link_to 'Destroy', material_contributor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Material Contributor', new_material_contributor_path %>

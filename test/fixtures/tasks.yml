@@ -1,0 +1,63 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  auth_account: one
+  student_year: one
+  activity: one
+  session_number: 1
+  scheduled_start_date: 2021-03-20
+  scheduled_end_date: 2021-03-20
+  actual_start_date: 2021-03-20
+  actual_end_date: 2021-03-20
+  task_description: MyText
+  pretest_ind: false
+  test_ind: false
+  quiz_ind: false
+  exam_ind: false
+  lab_ind: false
+  in_person_ind: false
+  online_ind: false
+  excursion_ind: false
+  task_priority: 1
+  task_time_in_hours: 9.99
+  task_time_in_minutes: 1
+  absent_ind: false
+  scratch_ind: false
+  student_sign_off_ind: false
+  teacher_sign_off_ind: false
+  task_note: MyText
+  teacher_note: MyText
+  status: one
+  updated_by: MyString
+  created_by: MyString
+
+two:
+  auth_account: two
+  student_year: two
+  activity: two
+  session_number: 1
+  scheduled_start_date: 2021-03-20
+  scheduled_end_date: 2021-03-20
+  actual_start_date: 2021-03-20
+  actual_end_date: 2021-03-20
+  task_description: MyText
+  pretest_ind: false
+  test_ind: false
+  quiz_ind: false
+  exam_ind: false
+  lab_ind: false
+  in_person_ind: false
+  online_ind: false
+  excursion_ind: false
+  task_priority: 1
+  task_time_in_hours: 9.99
+  task_time_in_minutes: 1
+  absent_ind: false
+  scratch_ind: false
+  student_sign_off_ind: false
+  teacher_sign_off_ind: false
+  task_note: MyText
+  teacher_note: MyText
+  status: two
+  updated_by: MyString
+  created_by: MyString

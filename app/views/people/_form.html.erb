@@ -1,0 +1,87 @@
+<%= form_with(model: person) do |form| %>
+  <% if person.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(person.errors.count, "error") %> prohibited this person from being saved:</h2>
+
+      <ul>
+        <% person.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :auth_account_id %>
+    <%= form.text_field :auth_account_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prefix_name %>
+    <%= form.text_field :prefix_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :middle_name %>
+    <%= form.text_field :middle_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :suffix_name %>
+    <%= form.text_field :suffix_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :goes_by_name %>
+    <%= form.text_field :goes_by_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :student_ind %>
+    <%= form.check_box :student_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :auth_user_id %>
+    <%= form.text_field :auth_user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :person_order %>
+    <%= form.number_field :person_order %>
+  </div>
+
+  <div class="field">
+    <%= form.label :person_note %>
+    <%= form.text_area :person_note %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status_id %>
+    <%= form.text_field :status_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :updated_by %>
+    <%= form.text_field :updated_by %>
+  </div>
+
+  <div class="field">
+    <%= form.label :created_by %>
+    <%= form.text_field :created_by %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Auth account:</strong>
+  <%= @day.auth_account_id %>
+</p>
+
+<p>
+  <strong>Day number:</strong>
+  <%= @day.day_number %>
+</p>
+
+<p>
+  <strong>Day short name:</strong>
+  <%= @day.day_short_name %>
+</p>
+
+<p>
+  <strong>Day long name:</strong>
+  <%= @day.day_long_name %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @day.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @day.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @day.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_day_path(@day) %> |
+<%= link_to 'Back', days_path %>

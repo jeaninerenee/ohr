@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Syllabus People</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Syllabus</th>
+      <th>Person</th>
+      <th>Teacher ind</th>
+      <th>Primary ind</th>
+      <th>Person note</th>
+      <th>Person order</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @syllabus_people.each do |syllabus_person| %>
+      <tr>
+        <td><%= syllabus_person.syllabus_id %></td>
+        <td><%= syllabus_person.person_id %></td>
+        <td><%= syllabus_person.teacher_ind %></td>
+        <td><%= syllabus_person.primary_ind %></td>
+        <td><%= syllabus_person.person_note %></td>
+        <td><%= syllabus_person.person_order %></td>
+        <td><%= syllabus_person.status_id %></td>
+        <td><%= syllabus_person.updated_by %></td>
+        <td><%= syllabus_person.created_by %></td>
+        <td><%= link_to 'Show', syllabus_person %></td>
+        <td><%= link_to 'Edit', edit_syllabus_person_path(syllabus_person) %></td>
+        <td><%= link_to 'Destroy', syllabus_person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Syllabus Person', new_syllabus_person_path %>

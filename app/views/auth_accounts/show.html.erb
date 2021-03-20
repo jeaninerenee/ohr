@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Account name:</strong>
+  <%= @auth_account.account_name %>
+</p>
+
+<p>
+  <strong>Plan:</strong>
+  <%= @auth_account.plan_id %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @auth_account.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @auth_account.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @auth_account.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_auth_account_path(@auth_account) %> |
+<%= link_to 'Back', auth_accounts_path %>

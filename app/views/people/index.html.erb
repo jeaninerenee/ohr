@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>People</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Auth account</th>
+      <th>Prefix name</th>
+      <th>First name</th>
+      <th>Middle name</th>
+      <th>Last name</th>
+      <th>Suffix name</th>
+      <th>Goes by name</th>
+      <th>Student ind</th>
+      <th>Auth user</th>
+      <th>Person order</th>
+      <th>Person note</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @people.each do |person| %>
+      <tr>
+        <td><%= person.auth_account_id %></td>
+        <td><%= person.prefix_name %></td>
+        <td><%= person.first_name %></td>
+        <td><%= person.middle_name %></td>
+        <td><%= person.last_name %></td>
+        <td><%= person.suffix_name %></td>
+        <td><%= person.goes_by_name %></td>
+        <td><%= person.student_ind %></td>
+        <td><%= person.auth_user_id %></td>
+        <td><%= person.person_order %></td>
+        <td><%= person.person_note %></td>
+        <td><%= person.status_id %></td>
+        <td><%= person.updated_by %></td>
+        <td><%= person.created_by %></td>
+        <td><%= link_to 'Show', person %></td>
+        <td><%= link_to 'Edit', edit_person_path(person) %></td>
+        <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Person', new_person_path %>

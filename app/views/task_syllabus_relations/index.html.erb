@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Task Syllabus Relations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Task</th>
+      <th>Syllabus task</th>
+      <th>Syllabus start date</th>
+      <th>Syllabus end date</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @task_syllabus_relations.each do |task_syllabus_relation| %>
+      <tr>
+        <td><%= task_syllabus_relation.task_id %></td>
+        <td><%= task_syllabus_relation.syllabus_task_id %></td>
+        <td><%= task_syllabus_relation.syllabus_start_date %></td>
+        <td><%= task_syllabus_relation.syllabus_end_date %></td>
+        <td><%= task_syllabus_relation.status_id %></td>
+        <td><%= task_syllabus_relation.updated_by %></td>
+        <td><%= task_syllabus_relation.created_by %></td>
+        <td><%= link_to 'Show', task_syllabus_relation %></td>
+        <td><%= link_to 'Edit', edit_task_syllabus_relation_path(task_syllabus_relation) %></td>
+        <td><%= link_to 'Destroy', task_syllabus_relation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Task Syllabus Relation', new_task_syllabus_relation_path %>

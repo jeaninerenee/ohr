@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @task_grade.task_id %>
+</p>
+
+<p>
+  <strong>Grade type:</strong>
+  <%= @task_grade.grade_type_id %>
+</p>
+
+<p>
+  <strong>Task grade:</strong>
+  <%= @task_grade.task_grade %>
+</p>
+
+<p>
+  <strong>Task total correct:</strong>
+  <%= @task_grade.task_total_correct %>
+</p>
+
+<p>
+  <strong>Task total possible:</strong>
+  <%= @task_grade.task_total_possible %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @task_grade.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @task_grade.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @task_grade.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_task_grade_path(@task_grade) %> |
+<%= link_to 'Back', task_grades_path %>

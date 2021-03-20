@@ -1,0 +1,122 @@
+<%= form_with(model: syllabus_task) do |form| %>
+  <% if syllabus_task.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(syllabus_task.errors.count, "error") %> prohibited this syllabus_task from being saved:</h2>
+
+      <ul>
+        <% syllabus_task.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :syllabus_id %>
+    <%= form.text_field :syllabus_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :week_number %>
+    <%= form.number_field :week_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :day_id %>
+    <%= form.text_field :day_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :session_number %>
+    <%= form.number_field :session_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :syllabus_task %>
+    <%= form.text_area :syllabus_task %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pretest_ind %>
+    <%= form.check_box :pretest_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :test_ind %>
+    <%= form.check_box :test_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quiz_ind %>
+    <%= form.check_box :quiz_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exam_ind %>
+    <%= form.check_box :exam_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lab_ind %>
+    <%= form.check_box :lab_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :in_person_ind %>
+    <%= form.check_box :in_person_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :online_ind %>
+    <%= form.check_box :online_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :excursion_ind %>
+    <%= form.check_box :excursion_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :task_priority %>
+    <%= form.number_field :task_priority %>
+  </div>
+
+  <div class="field">
+    <%= form.label :task_time_in_hours %>
+    <%= form.text_field :task_time_in_hours %>
+  </div>
+
+  <div class="field">
+    <%= form.label :task_time_in_minutes %>
+    <%= form.number_field :task_time_in_minutes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :task_note %>
+    <%= form.text_area :task_note %>
+  </div>
+
+  <div class="field">
+    <%= form.label :teacher_note %>
+    <%= form.text_area :teacher_note %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status_id %>
+    <%= form.text_field :status_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :updated_by %>
+    <%= form.text_field :updated_by %>
+  </div>
+
+  <div class="field">
+    <%= form.label :created_by %>
+    <%= form.text_field :created_by %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

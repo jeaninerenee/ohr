@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Years</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Auth account</th>
+      <th>Year start</th>
+      <th>Year end</th>
+      <th>Year short name</th>
+      <th>Year long name</th>
+      <th>Default ind</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @years.each do |year| %>
+      <tr>
+        <td><%= year.auth_account_id %></td>
+        <td><%= year.year_start %></td>
+        <td><%= year.year_end %></td>
+        <td><%= year.year_short_name %></td>
+        <td><%= year.year_long_name %></td>
+        <td><%= year.default_ind %></td>
+        <td><%= year.status_id %></td>
+        <td><%= year.updated_by %></td>
+        <td><%= year.created_by %></td>
+        <td><%= link_to 'Show', year %></td>
+        <td><%= link_to 'Edit', edit_year_path(year) %></td>
+        <td><%= link_to 'Destroy', year, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Year', new_year_path %>

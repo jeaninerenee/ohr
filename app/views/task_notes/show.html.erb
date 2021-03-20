@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @task_note.task_id %>
+</p>
+
+<p>
+  <strong>Task note:</strong>
+  <%= @task_note.task_note %>
+</p>
+
+<p>
+  <strong>Admin view only ind:</strong>
+  <%= @task_note.admin_view_only_ind %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @task_note.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @task_note.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @task_note.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_task_note_path(@task_note) %> |
+<%= link_to 'Back', task_notes_path %>

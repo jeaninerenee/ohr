@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Year Weeks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Auth account</th>
+      <th>Year</th>
+      <th>Week number</th>
+      <th>Week start date</th>
+      <th>Week end date</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @year_weeks.each do |year_week| %>
+      <tr>
+        <td><%= year_week.auth_account_id %></td>
+        <td><%= year_week.year_id %></td>
+        <td><%= year_week.week_number %></td>
+        <td><%= year_week.week_start_date %></td>
+        <td><%= year_week.week_end_date %></td>
+        <td><%= year_week.status_id %></td>
+        <td><%= year_week.updated_by %></td>
+        <td><%= year_week.created_by %></td>
+        <td><%= link_to 'Show', year_week %></td>
+        <td><%= link_to 'Edit', edit_year_week_path(year_week) %></td>
+        <td><%= link_to 'Destroy', year_week, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Year Week', new_year_week_path %>

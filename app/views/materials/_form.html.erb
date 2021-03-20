@@ -1,0 +1,152 @@
+<%= form_with(model: material) do |form| %>
+  <% if material.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(material.errors.count, "error") %> prohibited this material from being saved:</h2>
+
+      <ul>
+        <% material.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :auth_account_id %>
+    <%= form.text_field :auth_account_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :material_name %>
+    <%= form.text_field :material_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :material_order %>
+    <%= form.number_field :material_order %>
+  </div>
+
+  <div class="field">
+    <%= form.label :teacher_text_ind %>
+    <%= form.check_box :teacher_text_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :test_set_ind %>
+    <%= form.check_box :test_set_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :solution_key_ind %>
+    <%= form.check_box :solution_key_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :workbook_ind %>
+    <%= form.check_box :workbook_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :material_medium_id %>
+    <%= form.text_field :material_medium_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :material_volume %>
+    <%= form.text_field :material_volume %>
+  </div>
+
+  <div class="field">
+    <%= form.label :material_edition %>
+    <%= form.text_field :material_edition %>
+  </div>
+
+  <div class="field">
+    <%= form.label :material_series %>
+    <%= form.text_field :material_series %>
+  </div>
+
+  <div class="field">
+    <%= form.label :publisher_name %>
+    <%= form.text_field :publisher_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :publisher_city %>
+    <%= form.text_field :publisher_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :publisher_state %>
+    <%= form.text_field :publisher_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :publish_year %>
+    <%= form.number_field :publish_year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :website_version %>
+    <%= form.text_field :website_version %>
+  </div>
+
+  <div class="field">
+    <%= form.label :website_publisher %>
+    <%= form.text_field :website_publisher %>
+  </div>
+
+  <div class="field">
+    <%= form.label :website_url %>
+    <%= form.text_field :website_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :website_publish_date %>
+    <%= form.date_select :website_publish_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :website_access_date %>
+    <%= form.date_select :website_access_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :library_city %>
+    <%= form.text_field :library_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :database_service %>
+    <%= form.text_field :database_service %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bibliography_ind %>
+    <%= form.check_box :bibliography_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :material_note %>
+    <%= form.text_area :material_note %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status_id %>
+    <%= form.text_field :status_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :updated_by %>
+    <%= form.text_field :updated_by %>
+  </div>
+
+  <div class="field">
+    <%= form.label :created_by %>
+    <%= form.text_field :created_by %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

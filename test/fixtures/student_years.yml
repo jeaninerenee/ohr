@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  auth_account: one
+  person: one
+  grade: one
+  year: one
+  start_date: 2021-03-20
+  end_date: 2021-03-20
+  done_ind: false
+  status: one
+  updated_by: MyString
+  created_by: MyString
+
+two:
+  auth_account: two
+  person: two
+  grade: two
+  year: two
+  start_date: 2021-03-20
+  end_date: 2021-03-20
+  done_ind: false
+  status: two
+  updated_by: MyString
+  created_by: MyString

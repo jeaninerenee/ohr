@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Auth account:</strong>
+  <%= @person.auth_account_id %>
+</p>
+
+<p>
+  <strong>Prefix name:</strong>
+  <%= @person.prefix_name %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @person.first_name %>
+</p>
+
+<p>
+  <strong>Middle name:</strong>
+  <%= @person.middle_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @person.last_name %>
+</p>
+
+<p>
+  <strong>Suffix name:</strong>
+  <%= @person.suffix_name %>
+</p>
+
+<p>
+  <strong>Goes by name:</strong>
+  <%= @person.goes_by_name %>
+</p>
+
+<p>
+  <strong>Student ind:</strong>
+  <%= @person.student_ind %>
+</p>
+
+<p>
+  <strong>Auth user:</strong>
+  <%= @person.auth_user_id %>
+</p>
+
+<p>
+  <strong>Person order:</strong>
+  <%= @person.person_order %>
+</p>
+
+<p>
+  <strong>Person note:</strong>
+  <%= @person.person_note %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @person.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @person.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @person.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>

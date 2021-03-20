@@ -1,0 +1,83 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tasks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Auth account</th>
+      <th>Student year</th>
+      <th>Activity</th>
+      <th>Session number</th>
+      <th>Scheduled start date</th>
+      <th>Scheduled end date</th>
+      <th>Actual start date</th>
+      <th>Actual end date</th>
+      <th>Task description</th>
+      <th>Pretest ind</th>
+      <th>Test ind</th>
+      <th>Quiz ind</th>
+      <th>Exam ind</th>
+      <th>Lab ind</th>
+      <th>In person ind</th>
+      <th>Online ind</th>
+      <th>Excursion ind</th>
+      <th>Task priority</th>
+      <th>Task time in hours</th>
+      <th>Task time in minutes</th>
+      <th>Absent ind</th>
+      <th>Scratch ind</th>
+      <th>Student sign off ind</th>
+      <th>Teacher sign off ind</th>
+      <th>Task note</th>
+      <th>Teacher note</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tasks.each do |task| %>
+      <tr>
+        <td><%= task.auth_account_id %></td>
+        <td><%= task.student_year_id %></td>
+        <td><%= task.activity_id %></td>
+        <td><%= task.session_number %></td>
+        <td><%= task.scheduled_start_date %></td>
+        <td><%= task.scheduled_end_date %></td>
+        <td><%= task.actual_start_date %></td>
+        <td><%= task.actual_end_date %></td>
+        <td><%= task.task_description %></td>
+        <td><%= task.pretest_ind %></td>
+        <td><%= task.test_ind %></td>
+        <td><%= task.quiz_ind %></td>
+        <td><%= task.exam_ind %></td>
+        <td><%= task.lab_ind %></td>
+        <td><%= task.in_person_ind %></td>
+        <td><%= task.online_ind %></td>
+        <td><%= task.excursion_ind %></td>
+        <td><%= task.task_priority %></td>
+        <td><%= task.task_time_in_hours %></td>
+        <td><%= task.task_time_in_minutes %></td>
+        <td><%= task.absent_ind %></td>
+        <td><%= task.scratch_ind %></td>
+        <td><%= task.student_sign_off_ind %></td>
+        <td><%= task.teacher_sign_off_ind %></td>
+        <td><%= task.task_note %></td>
+        <td><%= task.teacher_note %></td>
+        <td><%= task.status_id %></td>
+        <td><%= task.updated_by %></td>
+        <td><%= task.created_by %></td>
+        <td><%= link_to 'Show', task %></td>
+        <td><%= link_to 'Edit', edit_task_path(task) %></td>
+        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Task', new_task_path %>

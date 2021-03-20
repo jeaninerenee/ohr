@@ -1,0 +1,57 @@
+<%= form_with(model: year_week) do |form| %>
+  <% if year_week.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(year_week.errors.count, "error") %> prohibited this year_week from being saved:</h2>
+
+      <ul>
+        <% year_week.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :auth_account_id %>
+    <%= form.text_field :auth_account_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_id %>
+    <%= form.text_field :year_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :week_number %>
+    <%= form.number_field :week_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :week_start_date %>
+    <%= form.date_select :week_start_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :week_end_date %>
+    <%= form.date_select :week_end_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status_id %>
+    <%= form.text_field :status_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :updated_by %>
+    <%= form.text_field :updated_by %>
+  </div>
+
+  <div class="field">
+    <%= form.label :created_by %>
+    <%= form.text_field :created_by %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

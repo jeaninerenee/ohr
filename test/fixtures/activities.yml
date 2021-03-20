@@ -1,0 +1,49 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  auth_account: one
+  activity_name: MyString
+  subject: one
+  activity_order: 1
+  default_time_in_hours: 9.99
+  default_time_in_minutes: 1
+  activity_overview: MyText
+  transcript_credit: 9.99
+  academic_course_ind: false
+  recurring_task_ind: false
+  sunday_recur_ind: false
+  monday_recur_ind: false
+  tuesday_recur_ind: false
+  wednesday_recur_ind: false
+  thursday_recur_ind: false
+  friday_recur_ind: false
+  saturday_recur_ind: false
+  activity_priority: 1
+  activity_note: MyText
+  status: one
+  updated_by: MyString
+  created_by: MyString
+
+two:
+  auth_account: two
+  activity_name: MyString
+  subject: two
+  activity_order: 1
+  default_time_in_hours: 9.99
+  default_time_in_minutes: 1
+  activity_overview: MyText
+  transcript_credit: 9.99
+  academic_course_ind: false
+  recurring_task_ind: false
+  sunday_recur_ind: false
+  monday_recur_ind: false
+  tuesday_recur_ind: false
+  wednesday_recur_ind: false
+  thursday_recur_ind: false
+  friday_recur_ind: false
+  saturday_recur_ind: false
+  activity_priority: 1
+  activity_note: MyText
+  status: two
+  updated_by: MyString
+  created_by: MyString

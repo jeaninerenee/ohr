@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @task_organization.task_id %>
+</p>
+
+<p>
+  <strong>Organization:</strong>
+  <%= @task_organization.organization_id %>
+</p>
+
+<p>
+  <strong>Primary ind:</strong>
+  <%= @task_organization.primary_ind %>
+</p>
+
+<p>
+  <strong>Organization note:</strong>
+  <%= @task_organization.organization_note %>
+</p>
+
+<p>
+  <strong>Organization order:</strong>
+  <%= @task_organization.organization_order %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @task_organization.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @task_organization.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @task_organization.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_task_organization_path(@task_organization) %> |
+<%= link_to 'Back', task_organizations_path %>

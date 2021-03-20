@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Auth account:</strong>
+  <%= @grade.auth_account_id %>
+</p>
+
+<p>
+  <strong>Grade number:</strong>
+  <%= @grade.grade_number %>
+</p>
+
+<p>
+  <strong>Grade name:</strong>
+  <%= @grade.grade_name %>
+</p>
+
+<p>
+  <strong>Grade order:</strong>
+  <%= @grade.grade_order %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @grade.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @grade.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @grade.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_grade_path(@grade) %> |
+<%= link_to 'Back', grades_path %>

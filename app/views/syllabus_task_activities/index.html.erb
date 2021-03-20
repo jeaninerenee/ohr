@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Syllabus Task Activities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Syllabus task</th>
+      <th>Activity</th>
+      <th>Primary ind</th>
+      <th>Activity note</th>
+      <th>Activity order</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @syllabus_task_activities.each do |syllabus_task_activity| %>
+      <tr>
+        <td><%= syllabus_task_activity.syllabus_task_id %></td>
+        <td><%= syllabus_task_activity.activity_id %></td>
+        <td><%= syllabus_task_activity.primary_ind %></td>
+        <td><%= syllabus_task_activity.activity_note %></td>
+        <td><%= syllabus_task_activity.activity_order %></td>
+        <td><%= syllabus_task_activity.status_id %></td>
+        <td><%= syllabus_task_activity.updated_by %></td>
+        <td><%= syllabus_task_activity.created_by %></td>
+        <td><%= link_to 'Show', syllabus_task_activity %></td>
+        <td><%= link_to 'Edit', edit_syllabus_task_activity_path(syllabus_task_activity) %></td>
+        <td><%= link_to 'Destroy', syllabus_task_activity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Syllabus Task Activity', new_syllabus_task_activity_path %>

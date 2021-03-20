@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  task: one
+  task_note: MyText
+  admin_view_only_ind: false
+  status: one
+  updated_by: MyString
+  created_by: MyString
+
+two:
+  task: two
+  task_note: MyText
+  admin_view_only_ind: false
+  status: two
+  updated_by: MyString
+  created_by: MyString

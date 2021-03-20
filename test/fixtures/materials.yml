@@ -1,0 +1,59 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  auth_account: one
+  material_name: MyString
+  material_order: 1
+  teacher_text_ind: false
+  test_set_ind: false
+  solution_key_ind: false
+  workbook_ind: false
+  material_medium: one
+  material_volume: MyString
+  material_edition: MyString
+  material_series: MyString
+  publisher_name: MyString
+  publisher_city: MyString
+  publisher_state: MyString
+  publish_year: 1
+  website_version: MyString
+  website_publisher: MyString
+  website_url: MyString
+  website_publish_date: 2021-03-20
+  website_access_date: 2021-03-20
+  library_city: MyString
+  database_service: MyString
+  bibliography_ind: false
+  material_note: MyText
+  status: one
+  updated_by: MyString
+  created_by: MyString
+
+two:
+  auth_account: two
+  material_name: MyString
+  material_order: 1
+  teacher_text_ind: false
+  test_set_ind: false
+  solution_key_ind: false
+  workbook_ind: false
+  material_medium: two
+  material_volume: MyString
+  material_edition: MyString
+  material_series: MyString
+  publisher_name: MyString
+  publisher_city: MyString
+  publisher_state: MyString
+  publish_year: 1
+  website_version: MyString
+  website_publisher: MyString
+  website_url: MyString
+  website_publish_date: 2021-03-20
+  website_access_date: 2021-03-20
+  library_city: MyString
+  database_service: MyString
+  bibliography_ind: false
+  material_note: MyText
+  status: two
+  updated_by: MyString
+  created_by: MyString

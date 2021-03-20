@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  syllabus_task: one
+  organization: one
+  primary_ind: false
+  organization_note: MyText
+  organization_order: 1
+  status: one
+  updated_by: MyString
+  created_by: MyString
+
+two:
+  syllabus_task: two
+  organization: two
+  primary_ind: false
+  organization_note: MyText
+  organization_order: 1
+  status: two
+  updated_by: MyString
+  created_by: MyString

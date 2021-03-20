@@ -1,0 +1,67 @@
+<%= form_with(model: syllabus) do |form| %>
+  <% if syllabus.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(syllabus.errors.count, "error") %> prohibited this syllabus from being saved:</h2>
+
+      <ul>
+        <% syllabus.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :auth_account_id %>
+    <%= form.text_field :auth_account_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :grade_id %>
+    <%= form.text_field :grade_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activity_id %>
+    <%= form.text_field :activity_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :syllabus_name %>
+    <%= form.text_area :syllabus_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :version_number %>
+    <%= form.text_field :version_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :syllabus_note %>
+    <%= form.text_area :syllabus_note %>
+  </div>
+
+  <div class="field">
+    <%= form.label :teacher_note %>
+    <%= form.text_area :teacher_note %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status_id %>
+    <%= form.text_field :status_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :updated_by %>
+    <%= form.text_field :updated_by %>
+  </div>
+
+  <div class="field">
+    <%= form.label :created_by %>
+    <%= form.text_field :created_by %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

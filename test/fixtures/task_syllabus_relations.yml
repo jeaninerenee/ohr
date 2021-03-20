@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  task: one
+  syllabus_task: one
+  syllabus_start_date: 2021-03-20
+  syllabus_end_date: 2021-03-20
+  status: one
+  updated_by: MyString
+  created_by: MyString
+
+two:
+  task: two
+  syllabus_task: two
+  syllabus_start_date: 2021-03-20
+  syllabus_end_date: 2021-03-20
+  status: two
+  updated_by: MyString
+  created_by: MyString

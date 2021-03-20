@@ -1,0 +1,52 @@
+<%= form_with(model: activity_organization) do |form| %>
+  <% if activity_organization.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(activity_organization.errors.count, "error") %> prohibited this activity_organization from being saved:</h2>
+
+      <ul>
+        <% activity_organization.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :activity_id %>
+    <%= form.text_field :activity_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :organization_id %>
+    <%= form.text_field :organization_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :organization_note %>
+    <%= form.text_area :organization_note %>
+  </div>
+
+  <div class="field">
+    <%= form.label :organization_order %>
+    <%= form.number_field :organization_order %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status_id %>
+    <%= form.text_field :status_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :updated_by %>
+    <%= form.text_field :updated_by %>
+  </div>
+
+  <div class="field">
+    <%= form.label :created_by %>
+    <%= form.text_field :created_by %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

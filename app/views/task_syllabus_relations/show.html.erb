@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @task_syllabus_relation.task_id %>
+</p>
+
+<p>
+  <strong>Syllabus task:</strong>
+  <%= @task_syllabus_relation.syllabus_task_id %>
+</p>
+
+<p>
+  <strong>Syllabus start date:</strong>
+  <%= @task_syllabus_relation.syllabus_start_date %>
+</p>
+
+<p>
+  <strong>Syllabus end date:</strong>
+  <%= @task_syllabus_relation.syllabus_end_date %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @task_syllabus_relation.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @task_syllabus_relation.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @task_syllabus_relation.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_task_syllabus_relation_path(@task_syllabus_relation) %> |
+<%= link_to 'Back', task_syllabus_relations_path %>

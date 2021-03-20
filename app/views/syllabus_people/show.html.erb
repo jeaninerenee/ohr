@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Syllabus:</strong>
+  <%= @syllabus_person.syllabus_id %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @syllabus_person.person_id %>
+</p>
+
+<p>
+  <strong>Teacher ind:</strong>
+  <%= @syllabus_person.teacher_ind %>
+</p>
+
+<p>
+  <strong>Primary ind:</strong>
+  <%= @syllabus_person.primary_ind %>
+</p>
+
+<p>
+  <strong>Person note:</strong>
+  <%= @syllabus_person.person_note %>
+</p>
+
+<p>
+  <strong>Person order:</strong>
+  <%= @syllabus_person.person_order %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @syllabus_person.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @syllabus_person.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @syllabus_person.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_syllabus_person_path(@syllabus_person) %> |
+<%= link_to 'Back', syllabus_people_path %>

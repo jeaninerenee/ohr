@@ -1,0 +1,1 @@
+json.partial! "syllabus_task_organizations/syllabus_task_organization", syllabus_task_organization: @syllabus_task_organization

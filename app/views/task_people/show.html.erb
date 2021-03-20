@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @task_person.task_id %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @task_person.person_id %>
+</p>
+
+<p>
+  <strong>Teacher ind:</strong>
+  <%= @task_person.teacher_ind %>
+</p>
+
+<p>
+  <strong>Primary ind:</strong>
+  <%= @task_person.primary_ind %>
+</p>
+
+<p>
+  <strong>Person note:</strong>
+  <%= @task_person.person_note %>
+</p>
+
+<p>
+  <strong>Person order:</strong>
+  <%= @task_person.person_order %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @task_person.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @task_person.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @task_person.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_task_person_path(@task_person) %> |
+<%= link_to 'Back', task_people_path %>

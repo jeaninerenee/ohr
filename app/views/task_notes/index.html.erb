@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Task Notes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Task</th>
+      <th>Task note</th>
+      <th>Admin view only ind</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @task_notes.each do |task_note| %>
+      <tr>
+        <td><%= task_note.task_id %></td>
+        <td><%= task_note.task_note %></td>
+        <td><%= task_note.admin_view_only_ind %></td>
+        <td><%= task_note.status_id %></td>
+        <td><%= task_note.updated_by %></td>
+        <td><%= task_note.created_by %></td>
+        <td><%= link_to 'Show', task_note %></td>
+        <td><%= link_to 'Edit', edit_task_note_path(task_note) %></td>
+        <td><%= link_to 'Destroy', task_note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Task Note', new_task_note_path %>

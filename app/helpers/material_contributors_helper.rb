@@ -1,0 +1,2 @@
+module MaterialContributorsHelper
+end

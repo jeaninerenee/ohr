@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Auth Logins</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Auth user</th>
+      <th>Devise user</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @auth_logins.each do |auth_login| %>
+      <tr>
+        <td><%= auth_login.auth_user_id %></td>
+        <td><%= auth_login.devise_user_id %></td>
+        <td><%= auth_login.status_id %></td>
+        <td><%= auth_login.updated_by %></td>
+        <td><%= auth_login.created_by %></td>
+        <td><%= link_to 'Show', auth_login %></td>
+        <td><%= link_to 'Edit', edit_auth_login_path(auth_login) %></td>
+        <td><%= link_to 'Destroy', auth_login, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Auth Login', new_auth_login_path %>

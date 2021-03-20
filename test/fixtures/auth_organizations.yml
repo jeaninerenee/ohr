@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  organization_name: MyString
+  auth_account: one
+  role: one
+  status: one
+  updated_by: MyString
+  created_by: MyString
+
+two:
+  organization_name: MyString
+  auth_account: two
+  role: two
+  status: two
+  updated_by: MyString
+  created_by: MyString

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Auth account:</strong>
+  <%= @year.auth_account_id %>
+</p>
+
+<p>
+  <strong>Year start:</strong>
+  <%= @year.year_start %>
+</p>
+
+<p>
+  <strong>Year end:</strong>
+  <%= @year.year_end %>
+</p>
+
+<p>
+  <strong>Year short name:</strong>
+  <%= @year.year_short_name %>
+</p>
+
+<p>
+  <strong>Year long name:</strong>
+  <%= @year.year_long_name %>
+</p>
+
+<p>
+  <strong>Default ind:</strong>
+  <%= @year.default_ind %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @year.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @year.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @year.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_year_path(@year) %> |
+<%= link_to 'Back', years_path %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Auth account:</strong>
+  <%= @contributor_type.auth_account_id %>
+</p>
+
+<p>
+  <strong>Contributor type:</strong>
+  <%= @contributor_type.contributor_type %>
+</p>
+
+<p>
+  <strong>Contributor type order:</strong>
+  <%= @contributor_type.contributor_type_order %>
+</p>
+
+<p>
+  <strong>Default ind:</strong>
+  <%= @contributor_type.default_ind %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @contributor_type.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @contributor_type.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @contributor_type.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_contributor_type_path(@contributor_type) %> |
+<%= link_to 'Back', contributor_types_path %>

@@ -1,0 +1,149 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Auth account:</strong>
+  <%= @task.auth_account_id %>
+</p>
+
+<p>
+  <strong>Student year:</strong>
+  <%= @task.student_year_id %>
+</p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @task.activity_id %>
+</p>
+
+<p>
+  <strong>Session number:</strong>
+  <%= @task.session_number %>
+</p>
+
+<p>
+  <strong>Scheduled start date:</strong>
+  <%= @task.scheduled_start_date %>
+</p>
+
+<p>
+  <strong>Scheduled end date:</strong>
+  <%= @task.scheduled_end_date %>
+</p>
+
+<p>
+  <strong>Actual start date:</strong>
+  <%= @task.actual_start_date %>
+</p>
+
+<p>
+  <strong>Actual end date:</strong>
+  <%= @task.actual_end_date %>
+</p>
+
+<p>
+  <strong>Task description:</strong>
+  <%= @task.task_description %>
+</p>
+
+<p>
+  <strong>Pretest ind:</strong>
+  <%= @task.pretest_ind %>
+</p>
+
+<p>
+  <strong>Test ind:</strong>
+  <%= @task.test_ind %>
+</p>
+
+<p>
+  <strong>Quiz ind:</strong>
+  <%= @task.quiz_ind %>
+</p>
+
+<p>
+  <strong>Exam ind:</strong>
+  <%= @task.exam_ind %>
+</p>
+
+<p>
+  <strong>Lab ind:</strong>
+  <%= @task.lab_ind %>
+</p>
+
+<p>
+  <strong>In person ind:</strong>
+  <%= @task.in_person_ind %>
+</p>
+
+<p>
+  <strong>Online ind:</strong>
+  <%= @task.online_ind %>
+</p>
+
+<p>
+  <strong>Excursion ind:</strong>
+  <%= @task.excursion_ind %>
+</p>
+
+<p>
+  <strong>Task priority:</strong>
+  <%= @task.task_priority %>
+</p>
+
+<p>
+  <strong>Task time in hours:</strong>
+  <%= @task.task_time_in_hours %>
+</p>
+
+<p>
+  <strong>Task time in minutes:</strong>
+  <%= @task.task_time_in_minutes %>
+</p>
+
+<p>
+  <strong>Absent ind:</strong>
+  <%= @task.absent_ind %>
+</p>
+
+<p>
+  <strong>Scratch ind:</strong>
+  <%= @task.scratch_ind %>
+</p>
+
+<p>
+  <strong>Student sign off ind:</strong>
+  <%= @task.student_sign_off_ind %>
+</p>
+
+<p>
+  <strong>Teacher sign off ind:</strong>
+  <%= @task.teacher_sign_off_ind %>
+</p>
+
+<p>
+  <strong>Task note:</strong>
+  <%= @task.task_note %>
+</p>
+
+<p>
+  <strong>Teacher note:</strong>
+  <%= @task.teacher_note %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @task.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @task.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @task.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>

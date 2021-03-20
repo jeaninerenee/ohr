@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Auth account:</strong>
+  <%= @subject.auth_account_id %>
+</p>
+
+<p>
+  <strong>Subject name:</strong>
+  <%= @subject.subject_name %>
+</p>
+
+<p>
+  <strong>Subject order:</strong>
+  <%= @subject.subject_order %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @subject.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @subject.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @subject.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_subject_path(@subject) %> |
+<%= link_to 'Back', subjects_path %>

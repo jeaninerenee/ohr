@@ -1,0 +1,127 @@
+<%= form_with(model: activity) do |form| %>
+  <% if activity.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+
+      <ul>
+        <% activity.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :auth_account_id %>
+    <%= form.text_field :auth_account_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activity_name %>
+    <%= form.text_field :activity_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :subject_id %>
+    <%= form.text_field :subject_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activity_order %>
+    <%= form.number_field :activity_order %>
+  </div>
+
+  <div class="field">
+    <%= form.label :default_time_in_hours %>
+    <%= form.text_field :default_time_in_hours %>
+  </div>
+
+  <div class="field">
+    <%= form.label :default_time_in_minutes %>
+    <%= form.number_field :default_time_in_minutes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activity_overview %>
+    <%= form.text_area :activity_overview %>
+  </div>
+
+  <div class="field">
+    <%= form.label :transcript_credit %>
+    <%= form.text_field :transcript_credit %>
+  </div>
+
+  <div class="field">
+    <%= form.label :academic_course_ind %>
+    <%= form.check_box :academic_course_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :recurring_task_ind %>
+    <%= form.check_box :recurring_task_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sunday_recur_ind %>
+    <%= form.check_box :sunday_recur_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :monday_recur_ind %>
+    <%= form.check_box :monday_recur_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tuesday_recur_ind %>
+    <%= form.check_box :tuesday_recur_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wednesday_recur_ind %>
+    <%= form.check_box :wednesday_recur_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :thursday_recur_ind %>
+    <%= form.check_box :thursday_recur_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :friday_recur_ind %>
+    <%= form.check_box :friday_recur_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :saturday_recur_ind %>
+    <%= form.check_box :saturday_recur_ind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activity_priority %>
+    <%= form.number_field :activity_priority %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activity_note %>
+    <%= form.text_area :activity_note %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status_id %>
+    <%= form.text_field :status_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :updated_by %>
+    <%= form.text_field :updated_by %>
+  </div>
+
+  <div class="field">
+    <%= form.label :created_by %>
+    <%= form.text_field :created_by %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

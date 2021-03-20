@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Materials</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Auth account</th>
+      <th>Material name</th>
+      <th>Material order</th>
+      <th>Teacher text ind</th>
+      <th>Test set ind</th>
+      <th>Solution key ind</th>
+      <th>Workbook ind</th>
+      <th>Material medium</th>
+      <th>Material volume</th>
+      <th>Material edition</th>
+      <th>Material series</th>
+      <th>Publisher name</th>
+      <th>Publisher city</th>
+      <th>Publisher state</th>
+      <th>Publish year</th>
+      <th>Website version</th>
+      <th>Website publisher</th>
+      <th>Website url</th>
+      <th>Website publish date</th>
+      <th>Website access date</th>
+      <th>Library city</th>
+      <th>Database service</th>
+      <th>Bibliography ind</th>
+      <th>Material note</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @materials.each do |material| %>
+      <tr>
+        <td><%= material.auth_account_id %></td>
+        <td><%= material.material_name %></td>
+        <td><%= material.material_order %></td>
+        <td><%= material.teacher_text_ind %></td>
+        <td><%= material.test_set_ind %></td>
+        <td><%= material.solution_key_ind %></td>
+        <td><%= material.workbook_ind %></td>
+        <td><%= material.material_medium_id %></td>
+        <td><%= material.material_volume %></td>
+        <td><%= material.material_edition %></td>
+        <td><%= material.material_series %></td>
+        <td><%= material.publisher_name %></td>
+        <td><%= material.publisher_city %></td>
+        <td><%= material.publisher_state %></td>
+        <td><%= material.publish_year %></td>
+        <td><%= material.website_version %></td>
+        <td><%= material.website_publisher %></td>
+        <td><%= material.website_url %></td>
+        <td><%= material.website_publish_date %></td>
+        <td><%= material.website_access_date %></td>
+        <td><%= material.library_city %></td>
+        <td><%= material.database_service %></td>
+        <td><%= material.bibliography_ind %></td>
+        <td><%= material.material_note %></td>
+        <td><%= material.status_id %></td>
+        <td><%= material.updated_by %></td>
+        <td><%= material.created_by %></td>
+        <td><%= link_to 'Show', material %></td>
+        <td><%= link_to 'Edit', edit_material_path(material) %></td>
+        <td><%= link_to 'Destroy', material, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Material', new_material_path %>

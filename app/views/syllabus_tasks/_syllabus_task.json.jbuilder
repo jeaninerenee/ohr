@@ -1,0 +1,2 @@
+json.extract! syllabus_task, :id, :syllabus_id, :week_number, :day_id, :session_number, :syllabus_task, :pretest_ind, :test_ind, :quiz_ind, :exam_ind, :lab_ind, :in_person_ind, :online_ind, :excursion_ind, :task_priority, :task_time_in_hours, :task_time_in_minutes, :task_note, :teacher_note, :status_id, :updated_by, :created_by, :created_at, :updated_at
+json.url syllabus_task_url(syllabus_task, format: :json)

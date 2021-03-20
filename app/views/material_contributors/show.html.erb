@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Material:</strong>
+  <%= @material_contributor.material_id %>
+</p>
+
+<p>
+  <strong>Contributor type:</strong>
+  <%= @material_contributor.contributor_type_id %>
+</p>
+
+<p>
+  <strong>Contributor order:</strong>
+  <%= @material_contributor.contributor_order %>
+</p>
+
+<p>
+  <strong>Prefix name:</strong>
+  <%= @material_contributor.prefix_name %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @material_contributor.first_name %>
+</p>
+
+<p>
+  <strong>Middle name:</strong>
+  <%= @material_contributor.middle_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @material_contributor.last_name %>
+</p>
+
+<p>
+  <strong>Suffix name:</strong>
+  <%= @material_contributor.suffix_name %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @material_contributor.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @material_contributor.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @material_contributor.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_material_contributor_path(@material_contributor) %> |
+<%= link_to 'Back', material_contributors_path %>

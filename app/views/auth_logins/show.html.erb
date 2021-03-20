@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Auth user:</strong>
+  <%= @auth_login.auth_user_id %>
+</p>
+
+<p>
+  <strong>Devise user:</strong>
+  <%= @auth_login.devise_user_id %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @auth_login.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @auth_login.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @auth_login.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_auth_login_path(@auth_login) %> |
+<%= link_to 'Back', auth_logins_path %>

@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  auth_account: one
+  year_start: 1
+  year_end: 1
+  year_short_name: MyString
+  year_long_name: MyString
+  default_ind: false
+  status: one
+  updated_by: MyString
+  created_by: MyString
+
+two:
+  auth_account: two
+  year_start: 1
+  year_end: 1
+  year_short_name: MyString
+  year_long_name: MyString
+  default_ind: false
+  status: two
+  updated_by: MyString
+  created_by: MyString

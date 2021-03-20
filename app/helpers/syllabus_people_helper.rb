@@ -1,0 +1,2 @@
+module SyllabusPeopleHelper
+end

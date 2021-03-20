@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @activity_material.activity_id %>
+</p>
+
+<p>
+  <strong>Material:</strong>
+  <%= @activity_material.material_id %>
+</p>
+
+<p>
+  <strong>Activity material order:</strong>
+  <%= @activity_material.activity_material_order %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @activity_material.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @activity_material.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @activity_material.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_activity_material_path(@activity_material) %> |
+<%= link_to 'Back', activity_materials_path %>

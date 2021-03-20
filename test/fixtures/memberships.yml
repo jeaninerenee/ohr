@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  person: one
+  organization: one
+  status: one
+  updated_by: MyString
+  created_by: MyString
+
+two:
+  person: two
+  organization: two
+  status: two
+  updated_by: MyString
+  created_by: MyString

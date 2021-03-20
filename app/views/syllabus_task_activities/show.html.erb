@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Syllabus task:</strong>
+  <%= @syllabus_task_activity.syllabus_task_id %>
+</p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @syllabus_task_activity.activity_id %>
+</p>
+
+<p>
+  <strong>Primary ind:</strong>
+  <%= @syllabus_task_activity.primary_ind %>
+</p>
+
+<p>
+  <strong>Activity note:</strong>
+  <%= @syllabus_task_activity.activity_note %>
+</p>
+
+<p>
+  <strong>Activity order:</strong>
+  <%= @syllabus_task_activity.activity_order %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @syllabus_task_activity.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @syllabus_task_activity.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @syllabus_task_activity.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_syllabus_task_activity_path(@syllabus_task_activity) %> |
+<%= link_to 'Back', syllabus_task_activities_path %>

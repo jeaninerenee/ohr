@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Auth account:</strong>
+  <%= @material_medium.auth_account_id %>
+</p>
+
+<p>
+  <strong>Material medium:</strong>
+  <%= @material_medium.material_medium %>
+</p>
+
+<p>
+  <strong>Material medium order:</strong>
+  <%= @material_medium.material_medium_order %>
+</p>
+
+<p>
+  <strong>Default ind:</strong>
+  <%= @material_medium.default_ind %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @material_medium.status_id %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @material_medium.updated_by %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @material_medium.created_by %>
+</p>
+
+<%= link_to 'Edit', edit_material_medium_path(@material_medium) %> |
+<%= link_to 'Back', material_media_path %>

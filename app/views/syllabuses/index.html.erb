@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Syllabuses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Auth account</th>
+      <th>Grade</th>
+      <th>Activity</th>
+      <th>Syllabus name</th>
+      <th>Version number</th>
+      <th>Syllabus note</th>
+      <th>Teacher note</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @syllabuses.each do |syllabus| %>
+      <tr>
+        <td><%= syllabus.auth_account_id %></td>
+        <td><%= syllabus.grade_id %></td>
+        <td><%= syllabus.activity_id %></td>
+        <td><%= syllabus.syllabus_name %></td>
+        <td><%= syllabus.version_number %></td>
+        <td><%= syllabus.syllabus_note %></td>
+        <td><%= syllabus.teacher_note %></td>
+        <td><%= syllabus.status_id %></td>
+        <td><%= syllabus.updated_by %></td>
+        <td><%= syllabus.created_by %></td>
+        <td><%= link_to 'Show', syllabus %></td>
+        <td><%= link_to 'Edit', edit_syllabus_path(syllabus) %></td>
+        <td><%= link_to 'Destroy', syllabus, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Syllabus', new_syllabus_path %>

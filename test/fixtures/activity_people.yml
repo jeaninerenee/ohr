@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  activity: one
+  person: one
+  teacher_ind: false
+  person_note: MyText
+  person_order: 1
+  status: one
+  updated_by: MyString
+  created_by: MyString
+
+two:
+  activity: two
+  person: two
+  teacher_ind: false
+  person_note: MyText
+  person_order: 1
+  status: two
+  updated_by: MyString
+  created_by: MyString

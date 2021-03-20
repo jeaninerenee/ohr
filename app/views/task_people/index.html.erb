@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Task People</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Task</th>
+      <th>Person</th>
+      <th>Teacher ind</th>
+      <th>Primary ind</th>
+      <th>Person note</th>
+      <th>Person order</th>
+      <th>Status</th>
+      <th>Updated by</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @task_people.each do |task_person| %>
+      <tr>
+        <td><%= task_person.task_id %></td>
+        <td><%= task_person.person_id %></td>
+        <td><%= task_person.teacher_ind %></td>
+        <td><%= task_person.primary_ind %></td>
+        <td><%= task_person.person_note %></td>
+        <td><%= task_person.person_order %></td>
+        <td><%= task_person.status_id %></td>
+        <td><%= task_person.updated_by %></td>
+        <td><%= task_person.created_by %></td>
+        <td><%= link_to 'Show', task_person %></td>
+        <td><%= link_to 'Edit', edit_task_person_path(task_person) %></td>
+        <td><%= link_to 'Destroy', task_person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Task Person', new_task_person_path %>
