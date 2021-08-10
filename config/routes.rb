@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   devise_for :devise_users
   #get 'home/index'
   root 'home#index'
+  #root 'years#index'
   resources :years
   resources :year_weeks
   resources :tasks

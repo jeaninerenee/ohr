@@ -11,52 +11,53 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field mb-3">
     <%= form.label :auth_account_id %>
-    <%= form.text_field :auth_account_id %>
+    <%= form.text_field :auth_account_id, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :year_start %>
-    <%= form.number_field :year_start %>
+  <div class="field mb-3">
+    <%= form.label "Start Year" %>
+    <%= form.number_field :year_start, class:"form-control", placeholder:"YYYY" %>
   </div>
 
-  <div class="field">
+  <div class="field mb-3">
     <%= form.label :year_end %>
-    <%= form.number_field :year_end %>
+    <%= form.number_field :year_end, class:"form-control", placeholder:"YYYY" %>
   </div>
 
-  <div class="field">
+  <div class="field mb-3">
     <%= form.label :year_short_name %>
-    <%= form.text_field :year_short_name %>
+    <%= form.text_field :year_short_name, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field mb-3">
     <%= form.label :year_long_name %>
-    <%= form.text_field :year_long_name %>
+    <%= form.text_field :year_long_name, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field mb-3">
     <%= form.label :default_ind %>
     <%= form.check_box :default_ind %>
   </div>
 
-  <div class="field">
+  <div class="field mb-3">
     <%= form.label :status_id %>
-    <%= form.text_field :status_id %>
+    <%= form.text_field :status_id, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field mb-3">
     <%= form.label :updated_by %>
-    <%= form.text_field :updated_by %>
+    <%= form.text_field :updated_by, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field mb-3">
     <%= form.label :created_by %>
-    <%= form.text_field :created_by %>
+    <%= form.text_field :created_by, class:"form-control" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-secondary" %>
   </div>
+
 <% end %>

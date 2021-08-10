@@ -3,7 +3,11 @@ class GradesController < ApplicationController
 
   # GET /grades or /grades.json
   def index
-    @grades = Grade.all
+    @grades =
+      Grade
+        .joins(auth_account: [{auth_organizations: { auth_memberships: { auth_user: :auth_login} } } ] )
+        .where(auth_logins: { devise_user_id: current_devise_user.id })
+        .order(:grade_order, :grade_number)
   end
 
   # GET /grades/1 or /grades/1.json

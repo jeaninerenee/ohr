@@ -1,6 +1,7 @@
 class YearsController < ApplicationController
   before_action :set_year, only: %i[ show edit update destroy ]
-
+  before_action :authenticate_devise_user!, except: [:index, :show] # JR, 2021089.  If user is not authenticated then don't let them do anything except see the index page and see the show page.
+  
   # GET /years or /years.json
   def index
     @years = Year.all
