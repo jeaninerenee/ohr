@@ -1,11 +1,20 @@
 Rails.application.routes.draw do
+  
   devise_for :admin_users, ActiveAdmin::Devise.config
+  
   ActiveAdmin.routes(self)
+  
   devise_for :devise_users
+  
   #get 'home/index'
   root 'home#index'
   #root 'years#index'
-  resources :years
+  
+  resources :years do
+    collection do
+      delete 'destroy_multiple'
+    end
+  end
   resources :year_weeks
   resources :tasks
   resources :task_syllabus_relations

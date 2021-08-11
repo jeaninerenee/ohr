@@ -50,9 +50,17 @@ class YearsController < ApplicationController
 
   # DELETE /years/1 or /years/1.json
   def destroy
-    @year.destroy
+    @year.destroy(params[:delete_ids])
     respond_to do |format|
-      format.html { redirect_to years_url, notice: "Year was successfully destroyed." }
+      format.html { redirect_to years_url, notice: "Year(s) successfully destroyed." }
+      format.json { head :no_content }
+    end
+  end
+
+  def destroy_multiple
+    Year.destroy(params[:year_ids])
+    respond_to do |format|
+      format.html { redirect_to years_url, notice: "Year(s) successfully destroyed." }
       format.json { head :no_content }
     end
   end
