@@ -8,8 +8,8 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
-require("packs/select_all")
-
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+//= require select_all.js

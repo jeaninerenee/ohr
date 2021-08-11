@@ -14,7 +14,7 @@
         <th>Updated by</th>
         <th>Created by</th>
         <th></th>
-        <th><input type="checkbox" id="selectAll"></input></th>
+        <th><input type="checkbox" id="selectAll">All Items</input></th>
       </tr>
     </thead>
 
@@ -31,13 +31,17 @@
           <td><%= year.updated_by %></td>
           <td><%= year.created_by %></td>
           <td></td>
-          <td><%= check_box_tag "year_ids[]", year.id, false, class: 'selectable' %></td>
+          <td><input type="checkbox" class="selectable">Item 1</input></td>
         </tr>
       <% end %>
     </tbody>
   </table>
   <%= submit_tag "Delete selected", :class => 'btn btn-primary btn-xs' %>
 <% end %>
+
+<script type="text/javascript">
+    $("#selectAll").select_all();
+</script>
 
 <br>
 <%= link_to 'Add New School Year', new_year_path, class:"btn btn-secondary" %>
